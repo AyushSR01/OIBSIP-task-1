@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+/* ------------------- Navbar ------------------ */
+
+.navbar {
+    background-color: #fa95ae !important;
+    color: #1f1f1f !important;
+    height: 80px !important;
+}
+
+.navbar a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navbar-collapse a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dropdown-menu {
+    background-color: #fa95ae !important;
+    color: #1f1f1f !important;
+    transition: all 0.5s ease !important;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    transition: all 0.5s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #1f1f1f !important;
+    color: white !important;
+    transition: all 0.5s ease !important;
+}
+
+.show::after {
+    transform: rotate(180deg) !important;
+}
+
+/* --------------- Navbar End ---------------- */
+
+/* ------------------ Cover ------------------ */
+.cover {
+    height: 100vh;
+    width: 100%;
+    background-color: #1f1f1f;
+    color: #fa95ae;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    width: 60% !important;
+    padding: 20px;
+    margin-left: 100px;
+    transition: all 1.1s ease-in;
+}
+.image{
+    overflow: hidden;
+    
+}
+.image  :hover{
+    transform:scale(1.2);
+    transition: all 1.1s ease-in-out;
+}
+.content h1 {
+    font-size: 70px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+}
+
+.cover p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.butn {
+    border: 3px solid #fa95ae;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.ex:hover {
+    color: #fa95ae !important;
+}
+
+.brw:hover {
+    color: #1f1f1f !important;
+}
+  
+.ex::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f !important;
+    transition: all 0.5s;
+    z-index: -1;
+    transform: translateX(-100%) !important;
+}
+
+.brw::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fa95ae !important;
+    transition: all 0.5s;
+    z-index: -1;
+    transform: translateX(-100%) !important;
+}
+  
+.butn:hover::before {
+    transform: translateX(0) !important;
+}
+
+/* --------------- Cover End ------------------ */
+
+/* --------------- Bestseller ----------------- */
+
+.bestseller {
+    background-color: #fa95ae;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bestseller ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 65%;
+}
+
+.bestseller ul li {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    width: 33%;
+}
+
+.bestseller ul li img {
+    height: 300px;
+    object-fit: scale-down;
+} 
+
+/* ------------ Bestseller End ---------------- */
+
+/* ------------ Buy Bestseller ---------------- */
+
+.buybest {
+    background-color: #121212;
+    color: #fa95ae;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    width: 75%;
+    gap: 40px 40px;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+  
+.grid-item {
+    display: flex;
+}
+
+.numc {
+    display: flex;
+    width: 50px !important;
+}
+
+.numc span {
+    width: 35px;
+    height: 35px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.buycon {
+    margin-left: 30px;
+    width: auto;
+}
+
+.buycon span {
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.grid-item p {
+    color: white;
+    font-size: 17px;
+}
+
+/* ----------- Buy Bestseller End -------------- */
+
+/* ----------------- Explore ------------------- */
+.explore {
+    background-color: #1f1f1f;
+    color: #fa95ae;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.genre {
+    display: flex;
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 65%;
+}
+
+.genre li {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 33%;
+}
+
+.genre li span {
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.genre li p {
+    color: white;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.genre li img {
+    height: 45px;
+    margin-bottom: 20px;
+} 
+
+/* -------------- Explore End ----------------- */
+
+/* ------------------ Dive -------------------- */
+
+.dive {
+    height: 100vh;
+    width: 100%;
+    background-color: #fa95ae;
+    color: #1f1f1f;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dive-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60% !important;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.dive-content h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.dive-content ul {
+    margin: 35px 0;
+    padding: 0 1em;
+    list-style: none;
+    font-size: 20px;
+}
+
+.dive-content li {
+    margin-bottom: 15px;
+}
+
+.dive-content li::before { 
+    content: "";
+    border-color: transparent #111;
+    border-style: solid;
+    border-width: 0.4em 0 0.4em 0.4em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 1.1em;
+    position: relative;
+}
+
+/* --------------- Dive End -------------------- */
+
+/* --------------- Upcoming -------------------- */
+
+.upcoming {
+    background-color: #090806;
+    color: #fa95ae;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upcoming img {
+    width: 100%;
+}
+
+.upcoming ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.upcoming ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 33%;
+}
+
+.upcoming .con {
+    margin: 30px 60px 0 25px;
+}
+
+.upcoming ul li span {
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.upcoming ul li p {
+    color: white;
+    font-size: 19px;
+    margin-top: 15px;
+}
+
+/* --------------- Upcoming End ----------------- */
+
+/* --------------- Personalised ----------------- */
+
+.personalised {
+    background-color: #1f1f1f;
+    color: #fa95ae;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Person-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Person-content table {
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.tabl table th, td {
+    padding: 20px 30px 10px 30px;
+}
+
+.Person-content p {
+    color: white;
+    font-size: 19px;
+    margin-top: 15px;
+}
+
+/* ------------- Personalised End ---------------- */
+
+/* ----------------- Contact --------------------- */
+
+.contact {
+    background-color: #090806;
+    color: #fa95ae;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 32% !important;
+    border-radius: 10px !important;
+    background-color: #1f1f1f !important;
+}
+
+.card-body {
+    padding: 2rem 2rem !important;
+}
+
+.card-title {
+    font-size: 30px;
+}
+
+.card-text {
+    font-size: 20px;
+    color: white;
+}
+
+/* --------------- Contact End -------------------- */
